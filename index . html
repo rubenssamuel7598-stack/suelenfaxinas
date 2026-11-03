@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suelen Faxinas | Faxina residencial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --soft:#f2f9f8; --ink:#0d3b3f; --muted:#52737a; --brand:#0f766e; --brand-ink:#ffffff;
+  --accent:#ffd84d; --accent-ink:#3a2f00; --line:#d9ebea; --field:#ffffff;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a2427; --soft:#0e3236; --ink:#e6f6f5; --muted:#9bc2c0; --brand:#5eead4; --brand-ink:#04302b;
+    --line:#1d484c; --field:#0a2427; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a2427; --soft:#0e3236; --ink:#e6f6f5; --muted:#9bc2c0; --brand:#5eead4; --brand-ink:#04302b;
+  --line:#1d484c; --field:#0a2427; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(1.6rem,5vw,2.2rem);font-weight:800;margin-bottom:10px}
+.lead{color:var(--muted);max-width:54ch;margin:0 0 26px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font:600 1rem "Nunito Sans",system-ui,sans-serif}
+.btn-main{background:var(--brand);color:var(--brand-ink)}
+.btn-alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+
+header{padding:16px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font:800 1.2rem "Bricolage Grotesque",system-ui,sans-serif;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--brand)}
+header a.small{font-weight:600;font-size:.95rem;color:var(--ink)}
+
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(2.4rem,9vw,4.4rem);font-weight:800;max-width:13ch;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:44ch;margin:18px 0 28px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:10px}
+
+.stats{background:var(--soft);padding:28px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.stat b{display:block;font:800 2rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--brand)}
+.stat span{color:var(--muted);font-size:.95rem}
+
+.prices{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.price{border:1px solid var(--line);border-radius:16px;padding:22px}
+.price h3{font-size:1.15rem;margin-bottom:4px}
+.price .v{font:800 2.4rem "Bricolage Grotesque",system-ui,sans-serif;margin:6px 0}
+.price p{margin:0;color:var(--muted);font-size:.95rem}
+.note{color:var(--muted);font-size:.92rem;margin-top:14px}
+
+.form{background:var(--soft);border-radius:20px;padding:26px;display:grid;gap:16px;max-width:560px}
+label,.lbl{display:grid;gap:6px;font-weight:600}
+select,input{font:inherit;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--field);color:var(--ink);width:100%}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:10px;align-items:flex-start;font-weight:400;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--field);cursor:pointer}
+.opt input{width:auto;margin-top:5px}
+.opt small{display:block;color:var(--muted)}
+.total{display:flex;justify-content:space-between;align-items:baseline;padding-top:6px;border-top:1px solid var(--line)}
+.total b{font:800 1.9rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--brand)}
+.link{background:none;border:0;color:var(--brand);font:600 .95rem "Nunito Sans",system-ui,sans-serif;text-align:left;padding:0;cursor:pointer;text-decoration:underline}
+#st{font-size:.9rem;color:var(--muted);margin:0}
+
+details{border-top:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--muted)}
+footer{background:var(--soft);padding:36px 0;text-align:center;color:var(--muted)}
+footer p{margin:6px 0}
+footer a{color:var(--brand);font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">Suelen<span> Faxinas</span></a>
+    <a class="small" href="#orcamento">Orçamento</a>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Casa limpa, sem você levantar um dedo.</h1>
+      <p>Faxina residencial com capricho e pontualidade. Casas e apartamentos, com preço claro desde o início.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#orcamento">Pedir orçamento</a>
+        <a class="btn btn-alt" href="#precos">Ver preços</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>+20 anos</b><span>de experiência em faxina residencial</span></div>
+      <div class="stat"><b>Casas e aptos</b><span>do kitnet ao imóvel grande</span></div>
+          </div>
+  </div>
+
+  <section id="precos">
+    <div class="wrap">
+      <h2>Preços</h2>
+      <p class="lead">Valor base por faxina. Sem taxas escondidas.</p>
+      <div class="prices">
+        <div class="price"><h3>Casa</h3><div class="v">R$ 220</div><p>Limpeza completa de todos os cômodos, banheiros, cozinha e áreas externas.</p></div>
+        <div class="price"><h3>Apartamento</h3><div class="v">R$ 150</div><p>Limpeza completa de todos os cômodos, banheiros, cozinha e varanda.</p></div>
+      </div>
+      <p class="note">Se o imóvel estiver muito sujo (faxina pesada), o valor pode mudar. Eu confirmo com você antes de começar.</p>
+    </div>
+  </section>
+
+  <section id="orcamento" style="background:var(--bg);padding-top:0">
+    <div class="wrap">
+      <h2>Peça seu orçamento</h2>
+      <p class="lead">Preencha, e o WhatsApp abre com tudo pronto para enviar.</p>
+      <div class="form">
+        <label>Tipo de imóvel
+          <select id="tipo">
+            <option value="Casa|220">Casa: R$ 220</option>
+            <option value="Apartamento|150">Apartamento: R$ 150</option>
+          </select>
+        </label>
+
+        <label>Tamanho
+          <select id="tam">
+            <option value="pequeno">Pequeno</option>
+            <option value="médio" selected>Médio</option>
+            <option value="grande">Grande</option>
+          </select>
+        </label>
+
+        <div class="lbl">Situação do imóvel
+          <div class="opts" role="radiogroup">
+            <label class="opt"><input type="radio" name="sit" value="Limpeza de manutenção" checked><span>Manutenção<small>Já é limpo com frequência</small></span></label>
+            <label class="opt"><input type="radio" name="sit" value="Normal"><span>Normal<small>Faz um tempo desde a última faxina</small></span></label>
+            <label class="opt"><input type="radio" name="sit" value="Pesada"><span>Pesada<small>Muito tempo sem limpar, pós-obra ou mudança</small></span></label>
+          </div>
+        </div>
+
+        <label>Endereço ou bairro da faxina
+          <input id="end" type="text" placeholder="Rua, número, bairro" autocomplete="street-address">
+        </label>
+        <button class="link" id="loc" type="button">Usar minha localização atual</button>
+        <p id="st" aria-live="polite"></p>
+
+        <div class="total"><span>Valor base</span><b id="tot">R$ 220</b></div>
+        <a class="btn btn-main" id="enviar" href="https://wa.me/559286450916" target="_blank" rel="noopener" style="text-align:center">Enviar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas" style="padding-top:0">
+    <div class="wrap">
+      <h2>Dúvidas comuns</h2>
+      <details><summary>Você leva os produtos de limpeza?</summary><p>Levo o material básico. Se preferir que eu use os seus produtos, sem problema.</p></details>
+      <details><summary>Quanto tempo dura uma faxina?</summary><p>Depende do tamanho e da situação do imóvel. Combinamos o tempo antes de começar.</p></details>
+      <details><summary>Como funciona o pagamento?</summary><p>Pix, dinheiro ou transferência, ao final do serviço.</p></details>
+      <details><summary>Quais bairros você atende?</summary><p>Informe o endereço no orçamento e eu confirmo se atendo a sua região.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Suelen Faxinas</b></p>
+    <p>WhatsApp: <a id="zap" href="#">+55 92 8645-0916</a></p>
+  </div>
+</footer>
+
+<script>
+  var base = "https://wa.me/559286450916";
+  var $ = function (id) { return document.getElementById(id); };
+  var coords = null;
+  $("zap").href = base;
+
+  function fmt(n) { return "R$ " + n; }
+  function atualizar() { $("tot").textContent = fmt($("tipo").value.split("|")[1]); }
+  $("tipo").addEventListener("change", atualizar);
+
+  $("loc").addEventListener("click", function () {
+    $("st").textContent = "Buscando sua localização…";
+    try {
+      navigator.geolocation.getCurrentPosition(function (p) {
+        coords = p.coords.latitude.toFixed(5) + "," + p.coords.longitude.toFixed(5);
+        $("st").textContent = "Localização anexada. Ela será enviada junto com o pedido."; montar({ preventDefault: function () {} });
+      }, function () {
+        $("st").textContent = "Não consegui acessar a localização. Digite o endereço acima.";
+      }, { timeout: 10000 });
+    } catch (e) {
+      $("st").textContent = "Não consegui acessar a localização. Digite o endereço acima.";
+    }
+  });
+
+  var montar; $("enviar").addEventListener("click", montar = function (ev) {
+    var t = $("tipo").value.split("|");
+    var sit = document.querySelector('input[name="sit"]:checked').value;
+    var end = $("end").value.trim();
+    if (!end && !coords) { if (ev.type === "click") { $("st").textContent = "Informe o endereço ou use sua localização."; $("end").focus(); ev.preventDefault(); } return; }
+    var msg = "Olá, Suelen! Quero o seu serviço de faxina (" + t[0].toLowerCase() + ", tamanho " + $("tam").value + ").\n" +
+      "Valor base: " + fmt(t[1]) + "\n" +
+      "Situação: " + sit + "\n" +
+      "Local: " + (end || "ver localização") +
+      (coords ? "\nMapa: https://maps.google.com/?q=" + coords : "");
+    $("enviar").href = "https://api.whatsapp.com/send?phone=559286450916&text=" + encodeURIComponent(msg);
+  });
+  ["input", "change"].forEach(function (e) { document.addEventListener(e, function () { montar({ preventDefault: function () {} }); }); });
+  montar({ preventDefault: function () {} });
+</script>
+</body>
+</html>
